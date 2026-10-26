@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feane Navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            background: url(first.jpg);
+            color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 720px;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px 50px;
+            background-color: transparent;
+        
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 36px;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links li{
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+            padding-top: 30px;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            color: #ffbe33;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .icon-link {
+            color: #ffffff;
+            font-size: 16px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .icon-link:hover {
+            color: #ffbe33;
+        }
+
+
+        .order-btn {
+            background-color: #ffbe33;
+            color: #222222;
+            padding: 10px 22px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-btn:hover {
+            background-color: #e6a825;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a class="logo">Feane</a>
+
+            <ul class="nav-links">
+                <li>HOME</li>
+                <li>MENU</li>
+                <li>ABOUT</li>
+                <li>BOOK TABLE</li>
+            </ul>
+            <div class="nav-right">
+                <a class="icon-link"><i class="fa-solid fa-user"></i></a>
+                <a class="icon-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="icon-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="order-btn">Order Online</a>
+            </div>
+        </nav>
+    </header>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1,h2,h3,
+        .brand-logo {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .bg-dark-theme {
+            background-color: #222831;
+            color: white;
+        }
+
+        .btn-yellow {
+            background-color: #ffbe33;
+            color: white;
+            border-radius: 45px;
+            padding: 10px 35px;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-yellow:hover {
+            background-color: #e69c00;
+            color: white;
+        }
+
+        .hero-section {
+            background: url('first.jpg') center/cover no-repeat;
+            min-height: 100vh;
+        }
+
+        .custom-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .brand-logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #ffbe33;
+        }
+
+        .nav-icons {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            color: white;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        .hamburger-btn {
+            display: none;
+            font-size: 26px;
+            color: white;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 4px 12px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 991px) {
+            .hamburger-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                background-color: rgba(34, 40, 49, 0.98);
+                padding: 20px;
+                margin-top: 15px;
+                border-radius: 10px;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-icons {
+                justify-content: center;
+            }
+
+            #menu-toggle:checked~.nav-menu {
+                display: flex;
+            }
+        }
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: white;
+            margin-right: 6px;
+        }
+
+        .dot.active {
+            background-color: #ffbe33;
+            transform: scale(1.3);
+        }
+
+        .offer-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 5px solid #ffbe33;
+            object-fit: cover;
+        }
+
+        .menu-card {
+            background-color: #222831;
+            color: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .menu-img-box {
+            background-color: #f1f2f3;
+            height: 210px;
+            border-radius: 0 0 0 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-img-box img {
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .cart-circle {
+            width: 40px;
+            height: 40px;
+            background-color: #ffbe33;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border: none;
+        }
+
+        .client-img {
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            border: 5px solid #ffbe33;
+            object-fit: cover;
+            margin-top: 15px;
+        }
+
+        .user:hover {
+            color: #ffbe33;
+            cursor: pointer;
+        }
+
+        .shoppingcart:hover {
+            color: #ffbe33;
+            cursor: pointer;
+
+        }
+
+        .search:hover {
+            color: #ffbe33;
+            cursor: pointer;
+
+        }
+
+        .dot.active:hover {
+            cursor: pointer;
+        }
+
+        .dot:hover {
+            cursor: pointer;
+        }
+
+        .btn-yellow:hover {
+            cursor: pointer;
+        }

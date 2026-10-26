@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: radial-gradient(blue, black);
+            color: white;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            justify-content: space-between;
+            padding-top: 13px;
+            margin: 20px;
+            font-size: 17px;
+
+            :hover {
+                color: blue;
+                cursor: pointer;
+            }
+        }
+
+        img {
+            height: 20px;
+        }
+
+        select {
+            background-color: transparent;
+            color: white;
+            border: none;
+            width: 50px;
+        }
+
+        .row1 {
+            text-align: center;
+            margin-top: 0;
+
+            h3 {
+                margin: 0;
+                padding: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+                color: blue;
+            }
+
+
+        }
+        h1{
+            margin: 20px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .service-card {
+            border: 2px solid white;
+            padding: 25px;
+            text-align: left;
+        }
+
+        .service-card1 {
+            border: 2px solid white;
+            padding: 25px;
+            text-align: left;
+        }
+
+        .service-card2 {
+            border: 2px solid white;
+            padding: 25px;
+            text-align: left;
+        }
+
+        .service-card3 {
+            border: 2px solid white;
+            padding: 25px;
+            text-align: left;
+        }
+
+        .service-card4 {
+            border: 2px solid white;
+            padding: 25px;
+            text-align: left;
+        }
+
+        .service-card5 {
+            border: 2px solid white;
+            padding: 25px;
+            text-align: left;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 10px 25px black;
+        }
+
+        .service-card1:hover {
+            box-shadow: 0 10px 25px black;
+        }
+
+        .service-card2:hover {
+            box-shadow: 0 10px 25px black;
+        }
+
+        .service-card3:hover {
+            box-shadow: 0 10px 25px black;
+        }
+
+        .service-card4:hover {
+            box-shadow: 0 10px 25px black;
+        }
+
+        .service-card5:hover {
+            box-shadow: 0 10px 25px black;
+        }
+        /* @media(max-width:768px){
+            .hamburger{
+                display: block;
+                
+            }
+            .menu{
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: black;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                color: white;
+                :hover{
+                    color: blue;
+                }
+
+            }
+
+            #menu-toggle:checked ~ nav{
+                display: flex;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <nav>
+           <!-- <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            ~
+        </label> -->
+        <h1>Sandhu</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Places</li>
+
+            <li class="down"><select>
+                    <option value="option">Drop</option>
+                    <option value="option1">pages</option>
+                    <option value="option2">testimonial</option>
+                </select></li>
+            <li>Select</li>
+           <a href="https://www.instagram.com/?hl=en" target="_blank"> <img  src="https://cdn-icons-png.flaticon.com/128/15713/15713420.png" alt=""></a>
+           <a href="https://www.facebook.com/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt=""></a>
+        </ul>
+    </nav>
+    <div class="row1">
+        <h3>Our Services</h3> <br>
+        <h2>Explore Unlimited Possibilities</h2> <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde cupiditate repellat, voluptatum necessitatibus
+            nobis rem optio maiores voluptates aut explicabo sit aperiam officiis dolorum recusandae voluptatibus autem
+            facilis. Vero, consectetur.</p><br>
+    </div>
+    <div class="service-grid">
+        <div class="service-card">
+            <img class="cardimg" src="https://cdn-icons-png.flaticon.com/128/619/619153.png" alt="">
+            <h2>Home Broadband</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ad pariatur odio blanditiis quos
+                cumque assumenda architecto. Architecto, quibusdam iusto voluptatum facere, atque, repellat corporis
+                dolorem aspernatur laboriosam ab quis?</p>
+        </div>
+        <div class="service-card1">
+            <img class="cardimg" src="https://cdn-icons-png.flaticon.com/128/6532/6532060.png" alt="">
+            <h2>Home WIFI</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, fuga corrupti quae sunt repellendus sit
+                dolore animi corporis, dolorum hic sint culpa velit consequuntur, harum laudantium earum amet voluptatum
+                iure!</p>
+        </div>
+        <div class="service-card2">
+            <img class="cardimg" src="https://cdn-icons-png.flaticon.com/128/724/724664.png" alt="">
+            <h2>Home Broadband</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus architecto error aperiam, corporis,
+                fugiat perspiciatis ipsum nostrum, adipisci mollitia nemo magnam recusandae dolores. Ab veniam ipsa ea
+                ipsum, quas ex.</p>
+        </div>
+        <div class="service-card3">
+            <img class="cardimg" src="https://cdn-icons-png.flaticon.com/128/186/186239.png" alt="">
+            <h2>Mobile Connection</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime accusantium voluptatem molestiae dicta
+                aperiam officiis facilis! Omnis exercitationem deleniti id tempora, eligendi tenetur minus quasi
+                obcaecati excepturi sint rem delectus.</p>
+        </div>
+        <div class="service-card4">
+            <img class="cardimg" src="https://cdn-icons-png.flaticon.com/128/619/619153.png" alt="">
+            <h2>Security</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda excepturi dolorem reiciendis impedit,
+                eligendi veniam porro quaerat quas nam iste cupiditate rerum deleniti libero. Labore deserunt quod porro
+                quam vitae?</p>
+        </div>
+        <div class="service-card5"">
+        <img class=" cardimg" src="https://cdn-icons-png.flaticon.com/128/2933/2933245.png" alt="">
+            <h2>TV Setup Box</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem at impedit tempore laborum nihil quod eaque
+                et earum sequi recusandae tempora fuga dolorum deserunt nemo est cupiditate, dolorem odio sunt.</p>
+        </div>
+    </div>
+</body>
+
+</html>
